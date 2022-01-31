@@ -1,0 +1,403 @@
+from pickle import TRUE
+import random
+import math
+from re import I
+"""
+ranglar=[]
+for i in range(100):
+    n=random.randint(0,1)
+    ranglar.append(n)
+    
+print(ranglar)
+    
+    print('===================')
+i=0
+for rang in ranglar:
+    
+    if rang==0:
+        ranglar[i]=1
+    else:
+        ranglar[i]=0
+    i+=1
+
+print(ranglar)
+ 
+
+def Sorting(lst):
+    lst2 = sorted(lst, key=len)
+    return lst2
+
+     
+word=input('Enter string: ')
+words=word.split()
+
+print(words)
+print(Sorting(words))
+    
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+"""
+#1 ikkilik to'rtburchak
+"""
+print('222222')
+print('2    2')
+print('2    2')
+print('222222')
+"""
+#2 uchburchak
+"""
+print('  A')
+print(' A A')
+print('AAAAA')
+"""
+#3 mushukcha
+"""
+print("\\    /\\")
+print(" )  ( ')")
+print("(  /  )")
+print(" \\(__)|")
+"""
+#4 kuchukcha
+
+#print('|\\_/|')
+#print('|qp| /}')
+#print('( 0 )"""\\')
+#print('|"^"` |')
+#print('||_/=\\\\__|')
+
+#5 birthday
+
+#x, y = map(int,input().split())
+#print('Birthday is %02d-%02d' %(x,y))
+
+#6 to'rtburchak 2
+"""
+n=int(input())
+print('%d%d%d%d%d%d'%(n,n,n,n,n,n))
+print('%d    %d'%(n,n))
+print('%d    %d'%(n,n))
+print('%d%d%d%d%d%d'%(n,n,n,n,n,n))
+"""
+#7 kalendarcha
+"""
+day=int(input('Enter a day: '))
+print('Sun Mon Tue Wed Thu Fri Sat')
+for n in range(7):
+    if day>31:
+        print('%3d '%((day%31)),end='')
+    else:
+        print('%3d '%(day),end='')
+    
+    day+=1
+"""
+#8 karra jadvali
+"""
+n=int(input())
+i=1
+for m in range(9):
+    print(f'{n}*{i}={n*i}')
+    i+=1
+"""
+#9 5 faktorial
+"""
+fakt=1
+i=1
+for n in range(5):
+    print(f'{i}!={fakt*i}')
+    fakt=fakt*i
+    i+=1
+"""  
+#10 10ta fibonacci
+"""
+sonlar=[0,1]
+i=2
+for n in range(8):
+    sonlar.append(sonlar[i-1]+sonlar[i-2])
+    i+=1
+
+for n in sonlar:
+    print(n,end=" ")
+"""
+#11 int char
+"""
+n=int(input())
+m=chr(n)
+print(m)
+"""
+#12 4burchak yuzi(int)
+"""
+x, y = map(int,input().split())
+print(f"Area is {x*y}.")
+"""
+#13 4burchak yuzi(double)
+"""
+x=float(input())
+y=float(input())
+print("Area is %0.2f." %(x*y))
+"""
+#14 Yaxlitlang!
+"""
+n=float(input())
+print(int((n+0.5)))
+"""
+#15 a->A
+"""
+c=input()
+print(chr(ord(c)-32))
+"""
+#16 A->a
+"""
+c=input()
+print(chr(ord(c)+32))
+"""
+#17 !! !! !!
+"""
+n=int(input())
+print("%d!"%(n/10000),end='')
+print("%d!"%(n%10000/1000),end='')
+print("%d!"%(n%10000%1000/100),end='')
+print("%d!"%(n%10000%1000%100/10),end='')
+print("%d!"%(n%10000%1000%100%10),end='')
+"""
+#18 Sekundlar
+"""
+seconds=int(input())
+hours=seconds/3600
+minutes=seconds%3600/60
+seconds=seconds%3600%60
+print("%02d:%02d:%02d" %(hours,minutes,seconds))
+"""
+#19 Sonning markazi
+"""
+N=int(input())
+print("%d"%(N%10000%1000/100))
+"""
+#20 Yandex taxi
+"""
+N=int(input())
+print("%d"%(int((N+500)/1000)*1000))
+"""
+#21 Doira yuzi
+"""
+N=float(input())
+s=N**2/(4*3.14)
+print("%d"%(s+0.5))
+"""
+#22 Twenties?
+"""
+N=int(input())
+if 20<=N<=30:
+    print(1)
+else:
+    print(0)
+"""
+#23 Alifbo
+"""
+b=input()
+if 65<=ord(b)<=90 or 97<=ord(b)<=128:
+    print(1)
+else:
+    print(0)
+"""
+#24 Even<=>Odd
+# N=int(input())
+# if N%2==0:
+#     print('even')
+# else:
+#     print('odd')
+
+#25 katta son
+
+# x, y = map(int,input().split())
+# if x>y:
+#     print(x)
+# else:
+#     print(y)
+ 
+#26   Bo'linma | Qoldiq
+
+# x, y = map(int,input().split())
+# if x>y:
+#     print(int(x/y))
+#     print(x%y)
+# else:
+#     print(int(y/x))
+#     print(y%x)
+
+#27 Budilnik
+
+# S, M = map(int,input().split())
+# if M<45 and S==0:
+#     print(23,end=' ')
+#     print(60-(45-M))
+# elif M<45 and S>0:
+#     print(S-1,end=' ')
+#     print(60-(45-M))
+# else:
+#     print(S,end=' ')
+#     print(M-45)
+
+#28 Smart enaga
+
+# N=int(input())
+
+# if N<0 or N>=40:
+#     print("ichkarida o'yna")
+# else:
+#     print("tashqarida o'yna")
+
+#29 Sonning kvadrati
+
+# x, y = map(int,input().split())
+
+# if x==y**2:
+#     print(f"{y}*{y}={x}")
+# elif  y==x**2:
+#     print(f"{x}*{x}={y}")
+# else:
+#     print('none')
+
+#30 Max
+
+# x, y,z = map(int,input().split())
+
+# if x>y and x>z:
+#     print(x)
+# elif y>z:
+#     print(y)
+# else:
+#     print(z)
+
+#31 Bo'linuvchi
+
+# N=int(input())
+
+# if N%2==0 and N%3==0 and N%5==0:
+#     print('A')
+# elif N%2==0 and N%3==0:
+#     print('B')
+# elif N%2==0 and N%5==0:
+#     print('C')
+# elif N%3==0 and N%5==0:
+#     print('D')
+# elif N%2==0 or N%3==0 or N%5==0:
+#     print('E')
+# else:
+#     print('N')
+
+#32 Kabisa yili
+
+# N=int(input())
+
+# if (N%4==0 and N%100!=0) or N%400==0:
+#     print(1)
+# else:
+#     print(0)
+
+#33 Sonni top
+
+# N=int(input())
+
+# for n in range(2):
+#     M=int(input())
+#     if N>M:
+#         print('TEPAGA')
+#     elif N<M:
+#         print('PASTGA')
+#     else:
+#         print('YORVORDIZ')
+#         break
+
+#34 A=>a
+
+# C=input()
+# if 65<=ord(C)<=90:
+#     print(chr(ord(C)+32))
+# elif 97<=ord(C)<=122:
+#     print(chr(ord(C)-32))
+# else:
+#     print('none')
+
+#35 Strike-Ball
+
+# j1,j2,j3=map(int, input().split())
+# t1,t2,t3=map(int, input().split())
+# x=0
+# y=0
+# if t1==j1:
+#     x+=1
+# if t2==j2:
+#     x+=1
+# if t3==j3:
+#     x+=1
+# if (t1==j2 or t1==j3)and (t1!=j1):
+#     y+=1
+# if (t2==j1 or t2==j3)and (t2!=j2):
+#     y+=1
+# if (t3==j1 or t3==j2)and (t3!=j3):
+#     y+=1
+    
+# print("%dS%dB"%(x,y))
+
+#36 Mini
+
+# a,c,b = input().split(' ')
+# a=int(a)
+# b=int(b)
+# if c=='+':
+#     print(a+b)
+# else:
+#     print(a-b)
+
+#37 Vending machine
+
+# N=int(input())
+# M=int(input())
+# if N==1:
+#     print("Americano")
+#     print(int((M-500)/500),end=' ')
+#     print(int((M-500)%500/100))
+# elif N==2:
+#     print("Caffe Latte")
+#     print(int((M-400)/500),end=' ')
+#     print(int((M-400)%500/100))
+# else:
+#     print("Lemon Tea")
+#     print(int((M-300)/500),end=' ')
+#     print(int((M-300)%500/100))
+
+#38 Pifagor sonlar
+
+# a,b,c=map(int, input().split())
+# if a**2==b**2+c**2 or b**2==a**2+c**2 or c**2==b**2+a**2 :
+#     print('true')
+# else:
+#     print('false')
+
+#39 Kublar yig'indilari
+
+# n=int(input())
+# s=0
+# i=0
+# nums = input().split()  
+# while i<n:
+#     m = int(nums[i])
+#     s+=int(math.pow(m,3))
+#     i+=1
+
+# print(s)
+
+#40 Faktorialmi
+# N=int(input())
+# i=1
+# fact=1
+# a='false'
+
+# while fact<=N:
+#     if N==fact:
+#         a='true'
+        
+#     fact*=i
+#     i+=1
+# print(a)
